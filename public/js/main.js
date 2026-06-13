@@ -54,10 +54,10 @@ function renderSekolah(container, data) {
                     <p class="text-gray-500 text-sm mt-1"><i class="fa-solid fa-users text-sm mr-1"></i> Siswa: ${item.jumlah_siswa}</p>
                 </div>
                 <div class="flex justify-end gap-3 mt-6 border-t border-gray-50 pt-4">
-                    <a href="/kelola/sekolah?id=${item.id}" class="text-gray-400 hover:text-[#33A1E0] transition-all text-sm">
+                    <a href="/kelola/sekolah?id=${item.id_sekolah}" class="text-gray-400 hover:text-[#33A1E0] transition-all text-sm">
                         <i class="fa-solid fa-pen-to-square"></i> Edit
                     </a>
-                    <button onclick="deleteItem('/api/sekolahs/${item.id}')" class="text-gray-400 hover:text-red-500 transition-all text-sm">
+                    <button onclick="deleteItem('/api/sekolahs/${item.id_sekolah}')" class="text-gray-400 hover:text-red-500 transition-all text-sm">
                         <i class="fa-solid fa-trash-can"></i> Hapus
                     </button>
                 </div>
@@ -100,10 +100,10 @@ function renderMenu(container, data) {
                     <p class="text-sm text-gray-500 mt-1"><i class="fa-solid fa-utensils text-sm mr-1"></i> Menu Gizi Seimbang</p>
                 </div>
                 <div class="flex justify-end gap-3 mt-6 border-t border-gray-50 pt-4">
-                    <a href="/kelola/menu?id=${item.id}" class="text-gray-400 hover:text-[#33A1E0] transition-all text-sm">
+                    <a href="/kelola/menu?id=${item.id_menu}" class="text-gray-400 hover:text-[#33A1E0] transition-all text-sm">
                         <i class="fa-solid fa-pen-to-square"></i> Edit
                     </a>
-                    <button onclick="deleteItem('/api/menus/${item.id}')" class="text-gray-400 hover:text-red-500 transition-all text-sm">
+                    <button onclick="deleteItem('/api/menus/${item.id_menu}')" class="text-gray-400 hover:text-red-500 transition-all text-sm">
                         <i class="fa-solid fa-trash-can"></i> Hapus
                     </button>
                 </div>
@@ -133,10 +133,10 @@ function renderShipment(container, data) {
                     <p class="text-sm text-gray-500 mt-2"><i class="fa-solid fa-truck text-sm mr-1"></i> Total: ${item.jumlah_porsi} Porsi</p>
                 </div>
                 <div class="flex justify-end gap-3 mt-6 border-t border-gray-50 pt-4">
-                    <a href="/kelola/shipment?id=${item.id}" class="text-gray-400 hover:text-[#33A1E0] transition-all text-sm">
+                    <a href="/kelola/distribusi?id=${item.id_shipment}" class="text-gray-400 hover:text-[#33A1E0] transition-all text-sm">
                         <i class="fa-solid fa-pen-to-square"></i> Edit
                     </a>
-                    <button onclick="deleteItem('/api/shipments/${item.id}')" class="text-gray-400 hover:text-red-500 transition-all text-sm">
+                    <button onclick="deleteItem('/api/shipments/${item.id_shipment}')" class="text-gray-400 hover:text-red-500 transition-all text-sm">
                         <i class="fa-solid fa-trash-can"></i> Hapus
                     </button>
                 </div>
